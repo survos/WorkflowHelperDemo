@@ -1,0 +1,9 @@
+easy_admin:
+    design:
+        menu:
+        - { label: 'Workflow', icon: code-fork, route: 'survos_workflows' }
+        - { entity: Task }
+
+    entities:
+        Task:
+            class: App\Entity\Task
