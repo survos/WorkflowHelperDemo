@@ -7,3 +7,8 @@ easy_admin:
     entities:
         Task:
             class: App\Entity\Task
+            new:
+                fields:
+                - '-id'
+                - '-marking'
+                - { property: 'name', type_options: { required: false } }
