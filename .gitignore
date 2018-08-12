@@ -1,6 +1,7 @@
 
 ###> symfony/framework-bundle ###
 /.env
+/nginx.conf
 /public/bundles/
 /var/
 /vendor/
