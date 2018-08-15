@@ -3,9 +3,17 @@ easy_admin:
         menu:
         - { label: 'Workflow', icon: code-fork, route: 'survos_workflows' }
         - { entity: Task }
+        - { entity: Article }
 
     entities:
         Task:
+            class: App\Entity\Task
+            new:
+                fields:
+                - '-id'
+                - '-marking'
+                - { property: 'name', type_options: { required: false } }
+        Article:
             class: App\Entity\Task
             new:
                 fields:

@@ -8,6 +8,7 @@
         "easycorp/easyadmin-bundle": "^1.17",
         "survos/workflow-bundle": "@dev",
         "symfony/console": "^4.1",
+        "symfony/expression-language": "^4.1",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.1",
         "symfony/lts": "^4@dev",
