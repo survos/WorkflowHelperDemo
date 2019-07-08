@@ -3542,12 +3542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/survos/LandingBundle.git",
-                "reference": "b996ffef1ea6b6bfbace05517c67cc8b8cc5f915"
+                "reference": "ed5597fd0eec57947095c6cea705ba04567c67cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/survos/LandingBundle/zipball/b996ffef1ea6b6bfbace05517c67cc8b8cc5f915",
-                "reference": "b996ffef1ea6b6bfbace05517c67cc8b8cc5f915",
+                "url": "https://api.github.com/repos/survos/LandingBundle/zipball/ed5597fd0eec57947095c6cea705ba04567c67cb",
+                "reference": "ed5597fd0eec57947095c6cea705ba04567c67cb",
                 "shasum": ""
             },
             "require": {
@@ -3578,7 +3578,7 @@
                 }
             ],
             "description": "Add a landing to a Symfony4 application",
-            "time": "2019-07-08T20:36:13+00:00"
+            "time": "2019-07-08T20:51:21+00:00"
         },
         {
             "name": "survos/workflow-extension-bundle",
