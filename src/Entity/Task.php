@@ -3,15 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Survos\WorkflowBundle\Traits\MarkingTrait;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TaskRepository")
  */
 class Task
 {
-
-    use MarkingTrait;
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -23,6 +20,11 @@ class Task
      * @ORM\Column(type="string", length=255)
      */
     private $name;
+
+    /**
+     * @ORM\Column(type="string", length=32, nullable=true)
+     */
+    private $marking;
 
     public function getId(): ?int
     {
@@ -37,6 +39,18 @@ class Task
     public function setName(string $name): self
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    public function getMarking(): ?string
+    {
+        return $this->marking;
+    }
+
+    public function setMarking(?string $marking): self
+    {
+        $this->marking = $marking;
 
         return $this;
     }

@@ -26,9 +26,32 @@ These are the steps to recreate this bundle, pick and choose to integrate it wit
     composer create-project symfony/website-skeleton WorkflowExtensionDemo
     cd WorkflowExtensionDemo
     composer require make orm-fixtures --dev
-    composer require orm admin expression-language
-    composer require survos/workflow-extension-bundle //??
+    composer require orm admin expression-language messenger
+    composer require symfony/webpack-encore-bundle && yarn install
     
+Bootstrapping the application.  We know we want users...
+    
+    composer require msgphp/user-bundle
+
+We know we want a basic landing page, with links to login, etc.
+
+    composer require survos/landing-bundle //??
+    
+Get bootstrap and jquery
+
+    yarn add bootstrap jquery popper.js
+    
+and add them to app.js to make them global
+
+```javascript
+// app.js
+require('jquery');
+require('bootstrap');
+```
+
+           
+    composer require survos/workflow-extension-bundle //??
+
     # make the entity / repo
     bin/console make:entity Task
        # name, string, 55, no (not nullable)

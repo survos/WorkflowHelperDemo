@@ -14,7 +14,6 @@ class TaskFixtures extends Fixture
         $task
             ->setName("First Task");
         $manager->persist($task);
-
         $manager->flush();
     }
 }
