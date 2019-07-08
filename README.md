@@ -62,6 +62,14 @@ require('bootstrap');
        # make a few tasks
 
 
+## Heroku
+
+Add node to buildpack
+Add Sentry to make your life easier!
+
+    heroku init
+    git push heroku master  
+      
       
 ## Credits
 
