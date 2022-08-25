@@ -1,7 +1,7 @@
 # WorkflowExtensionDemo
-Demo project for WorkflowExtensionBundle
+Demo project for WorkflowHelperBundle
 
-Thin wrapper to demonstrate the WorkflowExtensionBundle (https://github.com/survos/workflow-bundle).
+Thin wrapper to demonstrate the WorkflowHelperBundle (https://github.com/survos/workflow-bundle).
 
 It is available at (heroku URL), it may take several seconds to spin up.
 
@@ -22,6 +22,12 @@ It is the same as doing the following
 
 These are the steps to recreate this bundle, pick and choose to integrate it with your project.
 
+```bash
+syfmony new WorkflowDemo --webapp
+cd WorkflowDemo
+yarn install 
+
+```
 
     composer create-project symfony/website-skeleton WorkflowExtensionDemo
     cd WorkflowExtensionDemo
